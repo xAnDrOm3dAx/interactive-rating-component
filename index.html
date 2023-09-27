@@ -13,11 +13,10 @@
 
 <body>
   <main>
-    <article>
+    <article id="card-container">
 
       <!-- Rating state start -->
-      <div id="rating state">
-        <!-- Rating state start -->
+      <div class="rating-state">
         <img src="images/icon-star.svg" alt="star-icon">
         <h1>How did we do?</h1>
 
@@ -33,13 +32,13 @@
         </ul>
 
         <button class="btn-submit" id="submit-rating">Submit</button>
-        <!-- Rating state end -->
       </div>
+      <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thankyou-state">
+      <div class="thankyou-state hidden">
         <img src="./images/illustration-thank-you.svg" alt="" />
-        <p>You selected <!-- Add rating here --> out of 5</p>
+        <p class="selected-rating">You selected <!-- Add rating here --> out of 5</p>
 
         <h2>Thank you!</h2>
 
@@ -58,7 +57,6 @@
 
     </article>
   </main>
-
   <script src="index.js"></script>
 </body>
 
