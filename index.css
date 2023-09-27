@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 27rem;
+  max-width: 26.5rem;
 }
 
 .rating-state,
@@ -128,10 +128,6 @@ button {
   margin-bottom: 1.5rem;
 }
 
-.hidden {
-  display: none;
-}
-
 .attribution {
   font-size: 14px;
   text-align: center;
@@ -148,9 +144,18 @@ button {
     max-width: 400px;
   }
 
+  .rating-state p,
+  .thankyou-state p {
+    font-size: 0.85rem;
+  }
+
   .rating-state ul li button {
     width: 2.5rem;
     height: 2.5rem;
     margin: 0.1rem;
   }
+}
+
+.hidden {
+  display: none;
 }
