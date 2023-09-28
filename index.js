@@ -10,6 +10,8 @@ submitButton.addEventListener("click", () => {
   ratingStateContainer.style.display = "none";
 });
 
+const defaultRating = userRating.innerHTML;
+
 ratingChoices.forEach((rating) => {
   rating.addEventListener("click", () => {
     userRating.innerHTML = rating.innerHTML;
@@ -19,4 +21,5 @@ ratingChoices.forEach((rating) => {
 rateAgainButton.addEventListener("click", () => {
   thankyouStateContainer.classList.add("hidden");
   ratingStateContainer.style.display = "block";
+  userRating.innerHTML = defaultRating;
 });
