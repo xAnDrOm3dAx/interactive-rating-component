@@ -5,12 +5,12 @@ const rateAgainButton = document.getElementById("rate-again");
 const ratingChoices = document.querySelectorAll(".btn");
 const userRating = document.getElementById("user-rating");
 
+const defaultRating = userRating.innerHTML;
+
 submitButton.addEventListener("click", () => {
   thankyouStateContainer.classList.remove("hidden");
   ratingStateContainer.style.display = "none";
 });
-
-const defaultRating = userRating.innerHTML;
 
 ratingChoices.forEach((rating) => {
   rating.addEventListener("click", () => {
