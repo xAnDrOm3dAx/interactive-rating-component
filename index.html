@@ -16,7 +16,7 @@
     <article id="card-container">
 
       <!-- Rating state start -->
-      <div class="rating-state">
+      <div class="rating-state" id="rating-state">
         <img src="images/icon-star.svg" alt="star-icon">
         <h1>How did we do?</h1>
 
@@ -36,9 +36,9 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thankyou-state hidden">
+      <div class="thankyou-state hidden" id="thankyou-state">
         <img src="./images/illustration-thank-you.svg" alt="" />
-        <p class="selected-rating">You selected <!-- Add rating here --> out of 5</p>
+        <p class="selected-rating">You selected <span id="user-rating">5</span> out of 5</p>
 
         <h2>Thank you!</h2>
 
