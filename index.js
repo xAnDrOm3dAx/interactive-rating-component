@@ -8,8 +8,12 @@ const userRating = document.getElementById("user-rating");
 const defaultRating = userRating.innerHTML;
 
 submitButton.addEventListener("click", () => {
-  thankyouStateContainer.classList.remove("hidden");
-  ratingStateContainer.style.display = "none";
+  if (userRating.innerHTML === defaultRating) {
+    return
+  } else {
+    thankyouStateContainer.classList.remove("hidden");
+    ratingStateContainer.style.display = "none";
+  }
 });
 
 ratingChoices.forEach((rating) => {
